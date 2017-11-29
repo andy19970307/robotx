@@ -1,0 +1,2 @@
+robot_msgs:vehicle_follow
+-DCATKIN_DEVEL_PREFIX=/home/david/robotx/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/david/robotx/catkin_ws/install -G Unix Makefiles

@@ -1,0 +1,6 @@
+set(vehicle_follow_SETUP_PY_VERSION "0.0.1")
+set(vehicle_follow_SETUP_PY_SCRIPTS "")
+set(vehicle_follow_SETUP_PY_PACKAGES "vehicle_follow")
+set(vehicle_follow_SETUP_PY_PACKAGE_DIRS "include/vehicle_follow")
+set(vehicle_follow_SETUP_PY_MODULES "")
+set(vehicle_follow_SETUP_PY_MODULE_DIRS "")
