@@ -1,8 +1,0 @@
-prefix=/home/david/robotx/catkin_ws/devel
-
-Name: vehicle_follow
-Description: Description of vehicle_follow
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/david/robotx/catkin_ws/devel/lib 
-Requires: 
