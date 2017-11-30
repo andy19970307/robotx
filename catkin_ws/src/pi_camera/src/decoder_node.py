@@ -4,7 +4,7 @@ from cv_bridge import CvBridge, CvBridgeError
 import cv2
 import numpy as np
 from sensor_msgs.msg import CompressedImage,Image
-from robot_msgs.msg import BoolStamped
+from duckietown_msgs.msg import BoolStamped
 import time
 
 # bridge = CvBridge()
