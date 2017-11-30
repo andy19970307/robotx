@@ -23,7 +23,7 @@ class andy(object):
 		# Publicaiton
 
         # Subscription
-		self.sub_image_origin = rospy.Subscriber("andyduck/camera_node/image/compressed", CompressedImage, self.cbImage, queue_size=10)
+		self.sub_image_origin = rospy.Subscriber("arg4/camera_node/image/compressed", CompressedImage, self.cbImage, queue_size=10)
 
 		# safe shutdown
 		rospy.on_shutdown(self.custom_shutdown)
