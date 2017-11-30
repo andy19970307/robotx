@@ -21,7 +21,7 @@ class andy(object):
 		self.bridge = CvBridge()
 
 		# Publicaiton
-
+		self.pub_image_face = rospy.Publisher("~image_with_face", Image, queue_size=1)
         # Subscription
 		self.sub_image_origin = rospy.Subscriber("arg4/camera_node/image/compressed", CompressedImage, self.cbImage, queue_size=10)
 
@@ -129,6 +129,7 @@ class andy(object):
 		image_msg_out = self.bridge.cv2_to_imgmsg(image, "bgr8")
 		image_msg_out_edge = self.bridge.cv2_to_imgmsg(gray)
 		image_msg_out.header.stamp = image_msg.header.stamp
+		self.pub_image_face.publish(image_msg_out)
  
 class ShapeDetector:
 	def __init__(self):
