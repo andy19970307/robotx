@@ -6,7 +6,6 @@ import argparse
 from duckietown_msgs.msg import  Twist2DStamped
 from sensor_msgs.msg import CompressedImage, Image
 from cv_bridge import CvBridge, CvBridgeError
-from duckietown_utils.jpg import image_cv_from_jpg
 from matplotlib import pyplot as plt
 import cv2
 import sys
@@ -144,7 +143,6 @@ class figure_detector(object):
 		#decode the image to cv_image which we used
 		narr = np.fromstring(image_msg.data, np.uint8)
 		image = cv2.imdecode(narr, cv2.IMREAD_COLOR)
-		#image = image_cv_from_jpg(image_msg.data)
 
 		a=[0,0]
 		box = [a,a,a,a]
